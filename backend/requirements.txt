@@ -1,0 +1,9 @@
+uvicorn
+gunicorn
+fastapi
+python-multipart
+pydantic
+python-dotenv
+twilio
+openai
+pandas
