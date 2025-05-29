@@ -16,5 +16,6 @@ api_whatsapp_webhook = APIRouter(prefix='/whatsapp-webhook')
 )
 async def whatsapp_webhook(data: WhatsAppWebhookModel = Depends()):
     res = WhatsappResponseController.response(message=data)
+    print('teste')
     return
     #return PlainTextResponse("Mensagem recebida com sucesso!", status_code=200)
