@@ -1,6 +1,6 @@
 from fastapi import Form
 
-class WhatsAppWebhookModel:
+class WhatsAppWebhookPayload:
     def __init__(
         self,
         From: str = Form(...),

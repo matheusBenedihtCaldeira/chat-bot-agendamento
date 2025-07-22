@@ -2,7 +2,7 @@
 from fastapi import FastAPI, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 # Routes imports
-from routes.whatsapp_routes.webhook import api_whatsapp_webhook
+from routes.whatsapp_webhook.routes import api_whatsapp_webhook
 
 # Instancia APP
 app = FastAPI()
@@ -18,6 +18,7 @@ app.add_middleware(
 
 
 api = APIRouter(prefix='/api')
+# Rotas
 api.include_router(api_whatsapp_webhook)
 
 app.include_router(api)

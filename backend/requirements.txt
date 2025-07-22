@@ -3,7 +3,10 @@ gunicorn
 fastapi
 python-multipart
 pydantic
+pydantic-settings
 python-dotenv
 twilio
 openai
 pandas
+psycopg2
+sqlalchemy
